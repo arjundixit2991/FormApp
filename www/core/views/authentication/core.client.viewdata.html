@@ -1,0 +1,49 @@
+<!-- admin signin form-->
+<section>
+    <div class="col-md-12 ">
+            <div class="col-md-4 col-md-offset-4">
+                <form name="admin_signin">
+                    <fieldset>
+                        <!-- heading for form-->
+                        <div class="col-md-12 text-center text-info">
+                            <h2><b>View Data</b></h2>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-control">
+                                <label name="userEmail" for="email">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                                    <input class="form-control" id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"  ng-model="loginemail"
+                                           placeholder="Email" required/>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- password input-->
+                        <div class="form-group">
+                            <div class="input-control">
+                                <label name="userPassword" for="password" >Password</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                                    <input class="form-control" id="password" type="password" name="password" ng-model="loginpassword"
+                                           placeholder="Password" required/>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="input-control">
+                                <input class="form-control btn btn-primary btn-block" id="btn" type="submit" ng-click="login()" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class=" col-md-12 text-center">
+                                    <span class="input-group form-control alert alert-danger" ng-show="admin_signin.email.$invalid && admin_signin.email.$touched || admin_signin.password.$invalid && admin_signin.password.$touched">
+                                                     Email or Password is not valid!</span>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+</section>

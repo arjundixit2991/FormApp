@@ -1,0 +1,52 @@
+
+<!-- admin signup form-->
+<section>
+    <div class="col-sm-12">
+        <form>
+            <div class="text-center">
+                <h2><b>Fill Form</b></h2>
+            </div>
+
+            <div class="form-group col-md-4 col-md-offset-4">
+                <h4>Info 1</h4>
+                <div class="gapped">
+                    <select class="form-control" id="sel1">
+                        <option value="" selected disabled>Select work category</option>
+                        <option>Examination</option>
+                        <option>WMM</option>
+                        <option>Earth Work</option>
+                        <option>Concrete</option>
+                        <option>Bituminous</option>
+                    </select>
+                </div>
+                <div class="gapped">
+                    <select class="form-control" id="sel2">
+                        <option value="" selected disabled>Select unit</option>
+                        <option>Inches</option>
+                        <option>Meters</option>
+                    </select>
+                </div>
+
+                <div class="gapped"><input class="form-control" id="length" name="length" type="number" ng-model="length" placeholder="Enter length" required/></div>
+                <div class="gapped"><input class="form-control" id="breadth" name="breadth" type="number" ng-model="breadth" placeholder="Enter breadth" required/></div>
+                <div class="gapped"><input class="form-control" id="depth" name="depth" type="number" ng-model="depth" placeholder="Enter depth" required/></div>
+                <div class="gapped"><input class="form-control" id="qty" name="qty" type="number" ng-model="qty" placeholder="Enter quantity" required/></div>
+
+                <div class="input-control gapped text-center">
+                    <button class="btn btn-primary" id="btnSubmit" type="submit" ng-click="signUp()" >Sign Up</button>
+                    <button class="btn btn-warning" id="btnReset" type="reset">Reset</button>
+                    <button class="btn btn-info" id="btnAddMore" type="button"><span class="glyphicon glyphicon-plus"></span> Add More</button>
+                </div>
+            </div>
+
+
+            <!--<div class="form-group">-->
+                <!--<div class=" col-md-12 text-center">-->
+                             <!--<span class="input-group form-control alert alert-danger" ng-show="admin_signin.email.$invalid && admin_signin.email.$touched-->
+                             <!--|| admin_signin.name.$invalid && admin_signin.name.$touched ||admin_signin.password.$invalid && admin_signin.password.$touched">-->
+                             <!--Invalid input.</span>-->
+                <!--</div>-->
+            <!--</div>-->
+        </form>
+    </div>
+</section>

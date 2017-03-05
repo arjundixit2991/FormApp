@@ -1,0 +1,44 @@
+.center {
+  margin: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+.left{
+  float:left;
+  width:33%;
+}
+
+#inner {
+  display: table;
+  margin: 0 auto;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 60%;
+}
+
+.horizontal-collapse {
+   height: 70px;
+}
+
+.navbar-collapse.in {
+  overflow-y: hidden;
+}
+
+.angular-google-map-container {
+  height: 500px;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.gapped{
+  padding-bottom: 20px;
+}
